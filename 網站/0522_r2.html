@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>乘法表</title>
+</head>
+<body>
+    <h3 id="nine">九九乘法</h3>
+
+    <script>
+        var i=1;
+        var j=1;
+        var s=0;
+        var result='';
+
+        for(i=1;i<=9;i++){
+            for(j=1;j<=9;j++){
+                s=i*j;
+                result+=i+'*'+j+'='+s+'</br>';
+            }
+            result+='<hr>'
+            document.getElementById('nine').innerHTML=result;
+
+        }
+        document.getElementById('nine').innerHTML=result;
+
+
+
+    </script>
+    
+</body>
+</html>

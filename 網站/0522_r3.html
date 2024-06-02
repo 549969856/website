@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>時間</title>
+    <style>
+        div{text-align: center;font-size: 38px;}
+    </style>
+</head>
+<body>
+    <div>
+        <h2>time and hour example</h2>
+    </div>
+    <button onclick="func1()">取得時間</button>
+    <div id="hour">
+
+    </div>
+    <div id="msg">
+
+    </div>
+    <script>
+        function func1(){
+            var timehour=new Date().getHours();
+            var timemin=new Date().getMinutes();
+            var txttext='';
+            txttext=(timehour>11)?'下午':'上午';
+            document.getElementById('hour').innerHTML='time='+timehour+":"+timemin;
+            document.getElementById('msg').innerHTML='now:'+txttext
+        }
+    </script>
+    
+</body>
+</html>

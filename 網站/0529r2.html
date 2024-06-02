@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var puzzle = 7;
+        var numinput;
+
+        do {
+            numinput = window.prompt('輸入1~13', '');
+            if (Number(numinput) > puzzle) {
+                window.alert('小一點');
+            } else if (Number(numinput) < puzzle) {
+                window.alert('大一點');
+            }
+        } while (Number(numinput) !== puzzle);
+
+        window.alert('答對了');
+    </script>
+</body>
+
+</html>

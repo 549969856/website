@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>陣列的for each存取</div>
+    <div id="show1"></div>
+
+    <script>
+        var array1=[1,3,5,7,9,11];
+        var item;
+        var sum=0;
+        for(item in array1){
+            sum+=item;
+        }
+        document.getElementById('show1').innerHTML=sum;
+    </script>
+    
+</body>
+</html>

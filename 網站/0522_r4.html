@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陣列</title>
+</head>
+
+<body>
+    <div id="show"></div>
+    <div id="s"></div>
+    <div id="s1"></div>
+
+    <script>
+        var numlist = [1, 2, 3, 4, 30, 20, 1, 2, 3];
+        var sum = 0;
+        var sss = 0;
+        var sumeven = 0;
+        for (var i = 0; i < numlist.length; i++) {
+            sum += numlist[i];
+
+        }
+        for (var i = 0; i < numlist.length; i += 2) {
+            sumeven += numlist[i];
+        }
+
+        document.getElementById('show').innerHTML = sum;
+        document.getElementById('s1').innerHTML = sumeven;
+    </script>
+</body>
+
+</html>
